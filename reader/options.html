@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ゆっくりーだー 設定</title>
+	<script src="reader.js"></script>
+	<script src="options.js"></script>
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="options.css">
+</head>
+<body>
+	<h1>ゆっくりーだー 設定</h1>
+	
+	<table class="voice_setting">
+		<tbody>
+			<tr><td>速度：</td><td><input id="voice_speed" type="range" min="50" max="200"/><label><input id="voice_speed_def" type="checkbox" checked/>本体設定</label></td></tr>
+			<tr><td>音程：</td><td><input id="voice_pitch" type="range" min="50" max="200"/><label><input id="voice_pitch_def" type="checkbox" checked/>本体設定</label></td></tr>
+			<tr><td>音量：</td><td><input id="voice_volume" type="range" min="0" max="100"/><label><input id="voice_volume_def" type="checkbox" checked/>本体設定</label></td></tr>	
+			<tr><td>種類：</td>
+				<td>
+					<select id="voice_type">
+						<option value="1">女性1</option>
+						<option value="2">女性2</option>
+						<option value="3">男性1</option>
+						<option value="4">男性2</option>
+						<option value="5">中性</option>
+						<option value="6">ロボット</option>
+						<option value="7">機械1</option>
+						<option value="8">機械2</option>
+					</select>
+					<label><input id="voice_type_def" type="checkbox" checked/>本体設定</label>
+				</td>
+			</tr>
+			<tr><td><input id="talktest" type="button" value="テスト"></td><td><input id="talk" type="text" value="テスト"></td></tr>	
+		</tbody>
+	</table>
+
+
+	<div id="userlist" class="iconlist">
+	</div>
+	<div id="commlist" class="iconlist">
+	</div>
+
+</body>
+</html>

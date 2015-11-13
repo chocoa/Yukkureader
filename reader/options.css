@@ -1,0 +1,30 @@
+body {
+	background:url("./img/back.gif");
+}
+
+/* テーブル全般 */
+table {
+	border:1px solid #FFABF0;
+	border-radius: 5px;
+
+}
+th {
+	background-color: #EEEEEE;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0px 0px 3px #EBF1ED;
+	-moz-box-shadow: 0px 0px 3px #EBF1ED;
+	-webkit-box-shadow: 0px 0px 3px #EBF1ED;
+}
+td {
+	background-color: #FFFFFF;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0px 0px 3px #EBF1ED;
+	-moz-box-shadow: 0px 0px 3px #EBF1ED;
+	-webkit-box-shadow: 0px 0px 3px #EBF1ED;
+}
