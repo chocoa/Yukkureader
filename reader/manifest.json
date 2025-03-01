@@ -1,13 +1,13 @@
 {
-   "manifest_version": 2,
-   "name": "ゆっくりーだー",
-   "description": "選択した文章をソフトークで読み上げます。",
-   "icons": {
-      "128": "/img/icon128.png",
-      "48": "/img/icon48.png"
-   },
-   "version": "0.1.0",
-   "permissions": [ "contextMenus" ],
-   "background": { "page": "background.html" },
-   "options_page": "options.html"
+	"manifest_version": 3,
+	"name": "ゆっくりーだー",
+	"description": "選択した文章をソフトークで読み上げます。",
+	"icons": {
+		"128": "/img/icon128.png",
+		"48": "/img/icon48.png"
+	},
+	"version": "0.1.0",
+	"permissions": ["contextMenus", "storage", "background"],
+	"background": { "service_worker": "reader.js" },
+	"options_page": "options.html"
 }
