@@ -4,7 +4,7 @@ const settings = chrome.storage.local;
 // 速度（-1:棒読みちゃん画面上の設定）50-200
 const voice_speed = document.getElementById('voice_speed')
 voice_speed.addEventListener('change', () => {
-	settings.set({ voice_speed: voice_speed.value }).then((s) => { console.log(s) })
+	settings.set({ voice_speed: voice_speed.value })
 }, false)
 settings.get('voice_speed').then((s) => { voice_speed.value = s.voice_speed })
 

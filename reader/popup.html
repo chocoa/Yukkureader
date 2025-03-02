@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ゆっくりーだー</title>
+	<style>
+		body {
+			width: 200px;
+			font-family: 'Meiryo', sans-serif;
+			padding: 10px;
+			background-color: #f5f5f5;
+		}
+		.button-container {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+		button {
+			padding: 8px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			background-color: #fff;
+			cursor: pointer;
+			transition: background-color 0.2s;
+		}
+		button:hover {
+			background-color: #e0e0e0;
+		}
+		.title {
+			text-align: center;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #333;
+		}
+		.footer {
+			margin-top: 10px;
+			text-align: center;
+			font-size: 0.8em;
+		}
+		.footer a {
+			color: #666;
+			text-decoration: none;
+		}
+		.footer a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="title">ゆっくりーだー</div>
+	<div class="button-container">
+		<button id="stop-button">読み上げを停止</button>
+		<button id="pause-button">一時停止</button>
+		<button id="resume-button">再開</button>
+		<button id="skip-button">次の文章へスキップ</button>
+		<button id="options-button">設定</button>
+	</div>
+	<div class="footer">
+		<a href="#" id="open-options">詳細設定</a>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html> 

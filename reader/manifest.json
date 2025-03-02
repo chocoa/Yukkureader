@@ -9,5 +9,13 @@
 	"version": "0.1.0",
 	"permissions": ["contextMenus", "storage", "background"],
 	"background": { "service_worker": "reader.js" },
-	"options_page": "options.html"
+	"options_page": "options.html",
+	"action": {
+		"default_icon": {
+			"48": "/img/icon48.png",
+			"128": "/img/icon128.png"
+		},
+		"default_title": "ゆっくりーだー",
+		"default_popup": "popup.html"
+	}
 }
